@@ -1,0 +1,86 @@
+.card-info__wrapper {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    min-height: 236px;
+    flex-grow: 1;
+
+    overflow: hidden;
+
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    
+    background-color: var(--wrapper-color);
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+}
+
+.card-info__content {
+    max-width: 400px;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
+    z-index: 9;
+    margin: 0;
+    margin-right: 32px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card-info__item--ellipse {
+    margin: 0;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 38px;
+    min-height: 38px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+}
+
+.card-info__item {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.card-info__item--prop {
+    min-width: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #939CB0;
+    margin-right: 20px;
+}
+
+.card-info__item--data {
+    color: var(--h1-text);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 620px) {
+
+}
+
+@media screen and (max-width: 520px) {
+    .card-info__item--prop{
+        display: none;
+    }
+}

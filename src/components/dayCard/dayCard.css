@@ -1,0 +1,83 @@
+
+.day-card__wrapper {
+    width: 127px;
+    height: 178px;
+    left: 379px;
+    top: 527px;
+    padding: 11px;
+
+    cursor: pointer;
+
+
+    background-color: var(--days-cards-color);
+    border-radius: 10px;
+}
+
+.day-card__wrapper:hover {
+    filter: drop-shadow(0px 3px 20px rgba(147, 144, 144, 0.28));
+}
+
+.day-card__wrapper:active {
+    transform: translateY(1px);
+}
+
+.day-card__content {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.day-card__content img {
+    width: 48px;
+    height: 48px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.day-card__wrapper p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.day-card--day, .day-card__temp--day {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--h1-text) !important;
+}
+
+.day-card--day {
+    margin-bottom: 7px !important;
+}
+
+.day-card--data {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--h2-text);
+}
+
+.day-card--description, .day-card__temp--night {
+    font-style: normal;
+    color: var(--h2-text);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.day-card__temp--day, .day-card__temp--night {
+    margin: 0;
+}
+.day-card__temp {
+    margin-bottom: 6px;
+}
+
+.day-card--description {
+    margin: 0;
+}

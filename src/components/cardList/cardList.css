@@ -1,0 +1,86 @@
+.select-interval {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 15px;
+}
+
+.interval-btn {
+    padding: 7px 20px 9px 20px;
+    background-color: var(--wrapper-color);
+    /* max-width: 200px; */
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    color: var(--h1-text);
+    
+    border: none;
+    border-radius: 5px;
+}
+
+.interval-btn--active {
+    color: white !important;
+    background-color: var(--main-color) !important;
+}
+
+.select-interval button:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 3px 20px rgba(147, 144, 144, 0.10));
+}
+
+.select-interval button:active {
+    transform: translateY(1px);
+}
+
+
+.select-interval { 
+    padding: 0;
+    margin-top: 0;
+}
+
+.select-interval li:first-child {
+    margin-right: auto;
+}
+
+.cards-list__wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 19px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cards-list__container {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--wrapper-color);
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.15);
+    border-radius: 0px 0px 20px 20px;
+}
+
+@media screen and (max-width: 620px) {
+    .interval-btn {
+        padding: 4px 15px 5px 15px;
+        background-color: var(--wrapper-color);
+        max-width: 150px;
+        
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .select-interval {
+        justify-content: start;
+
+    }
+
+    .select-interval li:first-child {
+        margin-right: 0;
+    }
+}

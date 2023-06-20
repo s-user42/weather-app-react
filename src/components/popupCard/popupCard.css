@@ -1,0 +1,122 @@
+.popup__wrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.popup__card {
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    
+
+    width: 750px;
+    min-height: 300px;
+    background-color: var(--wrapper-color);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+}
+
+.popup__card--content {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 26px;
+    row-gap: 26px;
+
+    padding-top: 42px;
+    padding-bottom: 33px;
+    margin-left: 42px;
+}
+
+.popup__card--icon {
+    min-width: 60px;
+    min-height: 60px;
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+}
+
+.popup__card--general > * , .popup__card--region-info > *{
+    margin: 0;
+}
+
+.popup__card--degrees {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+
+    color: var(--main-color);
+}
+
+.popup__card--week-day {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: var(--h1-text);
+}
+
+.popup__card--region-info p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: var(--h2-text);
+}
+
+.popup__card--close-btn {
+    all: unset;
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: inherit;
+    
+    max-width: 18px;
+    max-height: 18px;
+}
+
+@media screen and (max-width: 800px) {
+    .popup__card--icon {
+        min-width: 45px;
+        min-height: 45px;
+    }
+    .popup__card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .popup__card--week-day {
+        font-size: 22px;
+    }
+    
+    .popup__card--region-info p {
+        font-size: 12px;
+    }
+
+    .card-info__container .card-info__item--prop{
+        display: none !important;
+    }
+    
+}

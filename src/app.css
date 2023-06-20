@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap');
+
+:root {
+    --main-color: #4793FF;
+    --pg-color: #efefef;
+    --wrapper-color: white;
+    --h1-text: #000;
+    --h2-text: #939CB0;
+    --days-cards-color: rgba(71, 147, 255, 0.2);
+}
+.dark {
+    --pg-color: #0D1117;
+    --wrapper-color: #4F4F4F;
+    --h1-text: #fff;
+    --days-cards-color: #2E3035;
+}
+
+body {
+    background-color: var(--pg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.geolocation__error {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geolocation__error img {
+    width: 200px;
+    height: 200px;
+}
+
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 50px;
+    margin: 0 auto 30px auto;
+    row-gap: 30px;
+}
+
+.container {
+    box-sizing: border-box;
+    position: relative;
+    overflow: visible;
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+a {
+    cursor: pointer;
+}
